@@ -1,0 +1,19 @@
+{
+  "name": "dailyhunter",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon --env-file=.env app.js",
+    "prod": "nodemon --env-file=.env.production app.js"
+  },
+  "author": "Rounak",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.0"
+  }
+}
