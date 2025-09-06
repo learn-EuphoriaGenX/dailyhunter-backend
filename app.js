@@ -6,6 +6,7 @@ const cors = require("cors")
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
+const { dbConnection } = require('./config/db.config');
 
 app.get('/', (req, res) => {
     res.send('Hello World! hii from express');
@@ -14,7 +15,6 @@ app.get('/', (req, res) => {
 const userRoutes = require('./routes/user.routes');
 app.use('/api/users', userRoutes);
 const tasksRoutes = require('./routes/task.route');
-const { dbConnection } = require('./config/db.config');
 app.use("/api/task", tasksRoutes)
 
 

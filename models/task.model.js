@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const { Schema, model } = mongoose
 
 const taskSchema = new Schema({
-    title: { // Fix Login Bug
+    title: {
         type: String,
         trim: true,
         required: true
